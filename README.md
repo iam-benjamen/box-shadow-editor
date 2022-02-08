@@ -6,6 +6,7 @@ User can input values such as vertical offset, horizontal offset, blur radius, s
 A copy to clipboard functionality is provided for copying the set values. Built with a nice and easy to use interface, kindly
 check image below.
 
+![Screenshot from 2022-02-08 16-59-01](https://user-images.githubusercontent.com/88411228/153029687-1d53f8b3-be94-4455-9820-40ab81dcceaf.png)
 
 ## Available Scripts
 
