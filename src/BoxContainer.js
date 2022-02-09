@@ -1,14 +1,10 @@
-import { useContext, useState } from "react";
+import { useState } from "react";
 import { Box, Square, VisuallyHidden } from "@chakra-ui/react";
-import { ColorContext } from "./context/context";
 
 const BoxContainer = (props) => {
     const [boxBg, setBoxBg] = useState("#40739e")
     const [containerBg, setContainerBg] = useState("#ffffff")
     
-    
-    const {Jokanola} = useContext(ColorContext);
-
     return (
         <Box 
             bg= {containerBg}  
