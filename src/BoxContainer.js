@@ -8,9 +8,9 @@ const BoxContainer = (props) => {
     return (
         <Box 
             bg= {containerBg}  
-            boxSize={{base:"80%", md: "70%"}}
+            boxSize={{base:"80%", md: "60%", lg: "60%"}}
             margin="auto"
-            h="md"
+           
             mt="6"
             border="1px"
             borderColor="grey"
