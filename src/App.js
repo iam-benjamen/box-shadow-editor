@@ -26,7 +26,7 @@ function App() {
   return (
     <Box
       bg="gray.100"
-      height="130vh"
+      height="120vh"
     >
       <Heading
         textAlign="center"

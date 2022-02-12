@@ -4,13 +4,13 @@ import { Box, Square, VisuallyHidden } from "@chakra-ui/react";
 const BoxContainer = (props) => {
     const [boxBg, setBoxBg] = useState("#40739e")
     const [containerBg, setContainerBg] = useState("#ffffff")
-    
+
     return (
         <Box 
             bg= {containerBg}  
-            boxSize={{base:"80%", md: "60%", lg: "60%"}}
+            width="70%"
+            h = "30rem"
             margin="auto"
-           
             mt="6"
             border="1px"
             borderColor="grey"
