@@ -11,29 +11,42 @@ import {
   HStack,
   VStack,
   Checkbox,
-  useClipboard
+  useClipboard,
 } from "@chakra-ui/react";
 
-
 const BoxParameters = (props) => {
-  const {hasCopied, onCopy} = useClipboard(props.boxShadow);
+  const { hasCopied, onCopy } = useClipboard(props.boxShadow);
 
   return (
     <VStack spacing="4">
-      <InputGroup mt="5" width={{base:"95%", md: "70%", lg: "60%"}} outline="1px solid black">
+      <InputGroup
+        mt="5"
+        width={{ base: "95%", md: "70%", lg: "60%" }}
+        outline="1px solid black"
+      >
         <Input
           disabled
           value={`BS: ${props.boxShadow}`}
           _placeholder={{ color: "black", fontWeight: "bold" }}
         />
-        <InputRightAddon color="white" bgColor="gray.700" _hover={{
-          background: "black"
-        }}>
-          <button onClick={onCopy}>{hasCopied? 'Copied': 'Copy'}</button>
+        <InputRightAddon
+          color="white"
+          bgColor="gray.700"
+          _hover={{
+            background: "black",
+          }}
+        >
+          <button onClick={onCopy}>{hasCopied ? "Copied" : "Copy"}</button>
         </InputRightAddon>
       </InputGroup>
 
-      <HStack pl="3" spacing={{base: '1rem', md: '2rem', lg: '3.5rem'} } fontSize="15px" fontFamily="monospace" flexWrap="wrap">
+      <HStack
+        pl="3"
+        spacing={{ base: "1rem", md: "2rem", lg: "3.5rem" }}
+        fontSize="15px"
+        fontFamily="monospace"
+        flexWrap="wrap"
+      >
         <Box margin="0" w="20">
           <label htmlFor="">h-offset</label>
           <NumberInput
@@ -156,7 +169,9 @@ const BoxParameters = (props) => {
           <Checkbox
             size="lg"
             value={props.inset}
-            onChange={(e) => {props.setInset(e.target.checked)}}
+            onChange={(e) => {
+              props.setInset(e.target.checked);
+            }}
           >
             inset
           </Checkbox>
